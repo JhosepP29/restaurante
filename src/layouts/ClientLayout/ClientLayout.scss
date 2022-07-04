@@ -1,0 +1,40 @@
+.client-layout-bg {
+  background:rgb(10, 89, 113);
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1em 0;
+}
+
+.client-layout {
+  padding: 10px;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+  
+}
+.mesa{
+  text-transform: uppercase;
+}
+@media (max-width: 740px) {
+  .client-layout__header{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+
+    h2{
+      text-transform: uppercase;
+      font-size: small;
+      padding: 0 5px 0 5px ;
+    }
+  }
+}

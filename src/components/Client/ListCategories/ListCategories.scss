@@ -1,0 +1,31 @@
+.list-categories-client {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+  &__category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.263);
+    padding: 10px;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px black;
+    background:rgb(255, 255, 255);
+
+    .ui.image {
+      margin-right: 10px;
+      border-radius: 1rem;
+    }
+  }
+}
+@media (max-width: 740px) {
+  .list-categories-client {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,43 @@
+.order-history-item {
+  position: relative;
+  border: 1px solid rgba(200, 200, 200, 0.263);
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.pending {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(249, 196, 6);
+  }
+  &.delivered {
+    background-color: rgb(183, 255, 115);
+  }
+
+  &__time {
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    background-color: rgb(249, 196, 6);
+    padding: 5px 20px;
+    box-shadow: 2px 2px 2px black;
+
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+
+    .ui.image {
+      width: 80px;
+      margin-right: 20px;
+    }
+
+    p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
